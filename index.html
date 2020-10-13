@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Guglietti</title>
+
+    <style>
+        @import url('https://fonts.google.com/css2?family=Ubuntu:wght@500;700&display=swap');
+        body, html {            
+            width: 100%;
+            height: 100%;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Ubuntu', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        h1 {
+            font-size: 5rem;
+        }
+
+        h5 {
+            font-size: 2rem;
+        }
+
+        #p {
+            color: red;
+            transition: color .2s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <h1>Work in <span id="p">Progress</span>.</h1>
+    <h5>Please be patient, we will be on soon.</h5>
+
+    <script>
+        let span = document.getElementById("p");
+
+        window.addEventListener('load', () => {
+            span.style.color = "red";
+            setInterval(() => {
+                if(span.style.color == "red") span.style.color = "black";
+                else if(span.style.color == "black") span.style.color = "red";
+            }, 900);
+        });
+    </script>
+</body>
+</html>
