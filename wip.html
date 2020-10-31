@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=+, initial-scale=1.0">
+    <link rel="stylesheet" href="css/general.css">
+    <title>Sorry, Work in Progress</title>
+</head>
+<body class="center" style="flex-direction: column;">
+    <h1 style="font-size: 7rem; font-weight: 900;">Work in <span style="transition: color .3s ease-in-out;">Progress</span></h1>
+    <p style="font-size: 2.5rem; font-weight: 500;">Please be patient, we will be on soon.</p>
+
+    <script>
+        let span = document.querySelector("span").style;
+        window.addEventListener("load", function() {
+            setInterval(() => { span.color = span.color == "red" ? "#141c3a" : "red"; }, 1200);
+        });
+    </script>
+</body>
+</html>
