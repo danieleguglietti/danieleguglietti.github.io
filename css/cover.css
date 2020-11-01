@@ -56,3 +56,55 @@
 
     background: #e91a1a;
 }
+/*******************************************
+**              MEDIA QUERY               **
+*******************************************/
+
+/*Big laptop*/
+@media only screen and (max-width: 1440px) {
+    
+}
+/*Laptop*/
+@media only screen and (max-width: 1280px) {
+    
+}
+@media only screen and (max-width: 1180px) {
+    
+}
+/* Big Tablets */
+@media only screen and (max-width: 1024px) {
+    
+}   
+@media only screen and (max-width: 960px) {
+    
+}
+/* Medium Tablets */
+@media only screen and (max-width: 834px) {
+    
+}
+@media only screen and (max-width: 800px) {
+    
+}
+/* Regular Tablets */
+@media only screen and (max-width: 768px) {
+    
+}
+/* Small Tablets */
+@media only screen and (max-width: 696px) {
+    
+}
+@media only screen and (max-width: 600px) {
+
+}
+/* Big Smartphones */
+@media only screen and (max-width: 414px) {
+    
+}
+/* Medium Smartphone */
+@media only screen and (max-width: 385px) {
+    
+}
+/* Regular Smartphone */
+@media only screen and (max-width: 320px) {
+
+}
