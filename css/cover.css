@@ -73,14 +73,23 @@
 }
 /* Big Tablets */
 @media only screen and (max-width: 1024px) {
-    
+    .cover .divider {
+        width: 65%;
+    }
 }   
 @media only screen and (max-width: 960px) {
-    
+    .cover .divider {
+        width: 65%;
+    }
 }
 /* Medium Tablets */
 @media only screen and (max-width: 834px) {
-    
+    .cover .divider {
+        width: 75%;
+    }
+    .cover__text h1 {
+        font-size: 5rem;
+    }
 }
 @media only screen and (max-width: 800px) {
     
@@ -91,20 +100,53 @@
 }
 /* Small Tablets */
 @media only screen and (max-width: 696px) {
-    
+    .cover .divider {
+        width: 80%;
+    }
+    .cover__text h1 {
+        font-size: 4.5rem;
+    }
+    .cover__text h3 {
+        font-size: 1.8rem;
+    }
 }
 @media only screen and (max-width: 600px) {
-
+    .cover__text h1 {
+        font-size: 4rem;
+    }
+    .cover__text h3 {
+        font-size: 1.5rem;
+    }
 }
 /* Big Smartphones */
 @media only screen and (max-width: 414px) {
-    
+    .cover__text h1 {
+        font-size: 2.5rem;
+    }
+    .cover__text h3 {
+        font-size: 1rem;
+    }
 }
 /* Medium Smartphone */
 @media only screen and (max-width: 385px) {
-    
+    .cover__socials__link {
+        font-size: 2.3rem;
+    }
 }
 /* Regular Smartphone */
 @media only screen and (max-width: 320px) {
-
+    .cover__text h1 {
+        font-size: 2rem;
+    }
+    .cover__text h3 {
+        font-size: .8rem;
+    }
+    .cover__socials__link {
+        font-size: 1.8rem;
+    }
+    .cover .divider {
+        margin: 20px 0;
+        height: 3px;
+        width: 90%;
+    }
 }
