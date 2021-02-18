@@ -2,96 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="/css/general.css">
-    <link rel="stylesheet" href="/css/cover.css">
-    <link rel="stylesheet" href="/css/menu.css">
-    <link rel="stylesheet" href="/css/sections.css">
-
-    <title>Home | Guglietti</title>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://kit.fontawesome.com/7bfb279659.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=+, initial-scale=1.0">
+    <link rel="stylesheet" href="css/general.css">
+    <title>Sorry, Work in Progress</title>
 </head>
-<body id="home">
+<body class="center" style="flex-direction: column;">
+    <h1 style="font-size: 7rem; font-weight: 900;">Work in <span style="transition: color .3s ease-in-out;">Progress</span></h1>
+    <p style="font-size: 2.5rem; font-weight: 500;">Please be patient, we will be on soon.</p>
 
-    <header class="menu-bar center">
-        <a href="#home">
-            <img src="images/simple_striked_red.png" class="menu-bar__logo" onmouseover="hover(this)" onmouseout="out(this)">
-        </a>
-        <nav class="menu">
-            <a href="#home" class="menu__item">Home</a>
-            <a href="#projects" class="menu__item">Projects</a>
-            <a href="#contacts" class="menu__item menu__btn">Contacts</a>
-        </nav>
-    </header>
-
-    <div class="cover center">
-        <div class="cover__text center">
-            <h1>Daniele Guglietti</h1>
-            <h3>Full-Stack & Software Developer. Clean-Code.</h3>
-        </div>
-        <div class="divider"></div>
-        <nav class="cover__socials center">
-            <a href="" class="cover__socials__link"><i class="fab fa-youtube"></i></a>
-            <a href="https://github.com/danieleguglietti" class="cover__socials__link"><i class="fab fa-github"></i></a>
-            <a href="https://twitch.tv/zl1ght_" class="cover__socials__link"><i class="fab fa-twitch"></i></a>
-        </nav>
-    </div>
-
-    <div class="about center">
-        <div class="about__text">
-            <h3>Hi! I'm Daniele.</h3>
-            <p>Nice to meet you. I am a Computer Science student made in Italy. What I love is play videogames, play drums and coding & math! My career goals are to contribute to Clean-Code and Open Source projects. Since 2019, I enjoy making sites and applications but now I don't do them only on my own, I am helped by my fantastic project mates. I hope I can help more than I have.</p>
-        </div>
-    </div>
-
-    <div class="divider-container center" id="projects">
-        <div class="divider divider--white" style="width: 80%;"></div>
-    </div>
-
-
-    <div class="projects center">
-        <div class="projects__card center">
-            <img src="images/jackpot_logo.png" class="projects__card__img">
-            <div class="projects__card__copy center">
-                <h3 class="projects__card__title">Jackpot Plugin.</h3>
-                <p class="projects__card__desc">Jackpot is a Java plugin for Minecraft Spigot servers.<br> It can help you manage a brand-new minigame: Bank robbers! Join in a game, select a team, and get ready to defend (or to empty) the bank vault! </p>
-                <a href="wip.html" class="projects__card__btn">Read More</a>
-            </div>
-        </div>
-    </div>
-
-    <div class="contacts center" id="contacts">
-        <h3 class="contacts__title">Do you have to contacts Me?</h3>
-        <p class="contacts__copy">There are several ways to do it... But don't warry, here's a list!</p>
-        <ul class="contacts__list">
-            <li>Mail me at <a href="mailto:gugliettidaniele@gmail.com">gugliettidaniele@gmail.com</a>!</li>
-            <li>Ping me on Discord DMs to <span>zL1ghT_#6755</span>.</li>
-            <li>Chat with me live on <a href="https://twitch.tv/zl1ght_">Twitch</a>.</li>
-            <li>Message me on Telegram to <a href="https://web.telegram.org/#/im?p=@zl1ght">@zl1ght</a>!</li>
-        </ul>
-    </div>
-
-    <script src="./js/attach_menu-to-top.min.js"></script>
-    <script src="./js/smooth-scroll.min.js"></script>
     <script>
-        $time = 200;
-
-        function hover(element) {
-            $(element).fadeOut($time, function() {
-                $(this).attr("src", "images/simple_colored_quadrato.png");
-            });
-            $(element).fadeIn($time);
-        }
-
-        function out(element) {
-            $(element).fadeOut($time, function() {
-                $(this).attr("src", "images/simple_striked_red.png");
-            });
-            $(element).fadeIn($time);
-        }
+        let span = document.querySelector("span").style;
+        window.addEventListener("load", function() {
+            setInterval(() => { span.color = span.color == "red" ? "#141c3a" : "red"; }, 1200);
+        });
     </script>
 </body>
 </html>
